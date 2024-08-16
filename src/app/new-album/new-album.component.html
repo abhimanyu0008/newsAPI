@@ -1,0 +1,15 @@
+<p>new-album works!</p>
+<div class="container">
+    <table>
+        <tr border="2" align="center" cellpadding="20" width="100px">
+            <th>Id</th>
+            <th>Title</th>
+        </tr>
+        <tr *ngFor="let i of album">
+            <td>{{i.id}}</td>
+            <td>{{i.title}}</td>
+        </tr>
+    </table>
+
+</div>
+

@@ -1,0 +1,13 @@
+<p>post-news works!</p>
+<table>
+    <tr border="2" align="center" cellpadding="20" width="100px">
+        <th>Id</th>
+        <th>Title</th>
+        <th>Body</th>
+    </tr>
+    <tr *ngFor="let i of post">
+        <td>{{i.id}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.body}}</td>
+    </tr>
+</table>

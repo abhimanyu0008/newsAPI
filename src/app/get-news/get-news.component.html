@@ -1,0 +1,17 @@
+
+<div *ngIf="info && info.length > 0">
+  <div class="container" *ngFor="let i of info">
+    <p style="text-align: center;">{{ i.author }}</p>
+    <p style="text-align: center;">{{ i.content}}</p>
+    <img [src]="i.urlToImage" width="400px" height="200px" class="mx-auto d-block">
+    <p class="text-center">{{ i.publishedAt }}</p>
+    <p class="text-center">{{ i.url}}</p>
+    <p class="text-md-start">{{ i.description }}</p>
+  </div>
+</div>
+<div *ngIf="!info || info.length === 0">
+  <p>No data available</p>
+</div>
+
+
+  
